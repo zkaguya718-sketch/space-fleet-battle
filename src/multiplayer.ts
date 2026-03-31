@@ -367,6 +367,7 @@ class BroadcastChannelTransport implements Transport {
 
 // ── Multiplayer Engine ─────────────────────────────────
 export class MultiplayerEngine {
+  useBroadcastChannel: boolean = false;
   private transport: Transport | null = null;
   private room: string = '';
   private myId: PlayerId | null = null;
