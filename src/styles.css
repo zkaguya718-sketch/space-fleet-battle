@@ -771,11 +771,18 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 }
 
 .hit {
-  color: #ff9500;
   background: linear-gradient(135deg, #2a1500, #3d1e00);
   border-color: #7a3a00;
-  font-size: 22px;
-  text-shadow: 0 0 8px rgba(255,150,0,0.4);
+  box-shadow: 0 0 10px rgba(255,140,0,0.35), inset 0 0 8px rgba(200,100,0,0.2);
+}
+
+.hit-marker {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+  display: block;
+  opacity: 0.92;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(1.1);
 }
 
 .destroyed {

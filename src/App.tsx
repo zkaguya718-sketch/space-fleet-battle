@@ -324,7 +324,9 @@ function GameGrid({
             return (
               <div key={`${r}-${c}`} className={cls}
                 onClick={() => interactive && !shot && onClick?.(r, c)}>
-                {content}
+                {shot === 'hit'
+                  ? <img src="/hit-marker.png" className="hit-marker" alt="hit" />
+                  : content}
               </div>
             );
           })
