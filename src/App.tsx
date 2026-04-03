@@ -131,6 +131,10 @@ function Lobby({ onCreateRoom, onJoinRoom, connecting, error }: {
     localStorage.setItem('selectedMap', map);
   };
 
+  useEffect(() => {
+    document.body.dataset.map = selectedMap;
+  }, [selectedMap]);
+
   const handleJoin = async () => {
     const code = joinCode.trim().toUpperCase();
     if (!code) return;
