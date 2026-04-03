@@ -124,6 +124,7 @@ function Lobby({ onCreateRoom, onJoinRoom, connecting, error }: {
   error: string;
 }) {
   const [joinCode, setJoinCode] = useState('');
+  const [selectedMap, setSelectedMap] = useState('space');
 
   const handleJoin = async () => {
     const code = joinCode.trim().toUpperCase();
@@ -156,10 +157,10 @@ function Lobby({ onCreateRoom, onJoinRoom, connecting, error }: {
 
         <div className="lobby-divider"><span className="lobby-divider-text">SELECT MAP</span></div>
         <div className="map-selector">
-          <button className="btn map-btn map-btn-space">🌌 Space</button>
-          <button className="btn map-btn map-btn-ocean">🌊 Ocean</button>
-          <button className="btn map-btn map-btn-lava">🌋 Lava</button>
-          <button className="btn map-btn map-btn-ice">❄ Ice</button>
+          <button className={`btn map-btn map-btn-space${selectedMap === 'space' ? ' map-btn-selected' : ''}`} onClick={() => setSelectedMap('space')}>🌌 Space</button>
+          <button className={`btn map-btn map-btn-ocean${selectedMap === 'ocean' ? ' map-btn-selected' : ''}`} onClick={() => setSelectedMap('ocean')}>🌊 Ocean</button>
+          <button className={`btn map-btn map-btn-lava${selectedMap === 'lava' ? ' map-btn-selected' : ''}`} onClick={() => setSelectedMap('lava')}>🌋 Lava</button>
+          <button className={`btn map-btn map-btn-ice${selectedMap === 'ice' ? ' map-btn-selected' : ''}`} onClick={() => setSelectedMap('ice')}>❄ Ice</button>
         </div>
 
         <div className="lobby-info">
