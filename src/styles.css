@@ -217,6 +217,57 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 }
 
 /* ════════════════════════════════════════════════════════════
+   MAP SELECTOR
+   ════════════════════════════════════════════════════════════ */
+.map-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.map-btn {
+  padding: 12px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: default;
+  transition: none;
+  text-transform: uppercase;
+}
+
+.map-btn-space {
+  background: linear-gradient(135deg, #0d0e2a, #181a40);
+  color: #a080ff;
+  border-color: rgba(140, 100, 255, 0.45);
+  box-shadow: inset 0 0 12px rgba(120, 80, 255, 0.08);
+}
+
+.map-btn-ocean {
+  background: linear-gradient(135deg, #0a1e28, #102838);
+  color: #40d0c8;
+  border-color: rgba(40, 200, 190, 0.4);
+  box-shadow: inset 0 0 12px rgba(30, 180, 180, 0.08);
+}
+
+.map-btn-lava {
+  background: linear-gradient(135deg, #200a00, #381000);
+  color: #ff7040;
+  border-color: rgba(255, 90, 30, 0.4);
+  box-shadow: inset 0 0 12px rgba(255, 80, 20, 0.08);
+}
+
+.map-btn-ice {
+  background: linear-gradient(135deg, #0a1828, #101e34);
+  color: #90d8f8;
+  border-color: rgba(120, 210, 255, 0.4);
+  box-shadow: inset 0 0 12px rgba(100, 200, 255, 0.08);
+}
+
+/* ════════════════════════════════════════════════════════════
    BUTTONS
    ════════════════════════════════════════════════════════════ */
 .btn {

@@ -154,6 +154,14 @@ function Lobby({ onCreateRoom, onJoinRoom, connecting, error }: {
 
         {error && <div className="error-msg">⚠ {error}</div>}
 
+        <div className="lobby-divider"><span className="lobby-divider-text">SELECT MAP</span></div>
+        <div className="map-selector">
+          <button className="btn map-btn map-btn-space">🌌 Space</button>
+          <button className="btn map-btn map-btn-ocean">🌊 Ocean</button>
+          <button className="btn map-btn map-btn-lava">🌋 Lava</button>
+          <button className="btn map-btn map-btn-ice">❄ Ice</button>
+        </div>
+
         <div className="lobby-info">
           <h3>How to Play</h3>
           <ol>
