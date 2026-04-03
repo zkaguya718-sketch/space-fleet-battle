@@ -547,7 +547,7 @@ function WinScreen({ engine, state, myId }: { engine: MultiplayerEngine; state: 
     <div className="win-container">
       <div className="win-box">
         <div className="win-trophy">🏆</div>
-        <h2 className="win-title">VICTORY!</h2>
+        <h2 className="win-title">{iWon ? 'VICTORY!' : 'DEFEAT!'}</h2>
         <p className={`win-subtitle ${iWon ? 'win-text' : 'lose-text'}`}>
           {iWon ? 'You destroyed all enemy ships!' : 'Your fleet has been obliterated!'}
         </p>
