@@ -193,24 +193,26 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 }
 
 .lobby-info h3 {
-  color: #6090d0;
-  font-size: 0.9rem;
+  color: #80b0e8;
+  font-size: 0.95rem;
   margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 .lobby-info ol {
   padding-left: 20px;
-  color: #8090b0;
-  font-size: 0.9rem;
-  line-height: 1.6;
+  color: #a0b4cc;
+  font-size: 0.92rem;
+  line-height: 1.8;
 }
 
-.lobby-info b { color: #a0c0ff; }
+.lobby-info b { color: #b8d4ff; }
 
 .lobby-note {
   margin-top: 10px;
-  color: #6080a0;
-  font-size: 0.85rem;
+  color: #7898b8;
+  font-size: 0.87rem;
   font-style: italic;
 }
 
@@ -258,8 +260,8 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
   transform: translateY(-1px);
 }
 
-.btn-lg { padding: 14px 40px; font-size: 0.95rem; }
-.btn-sm { padding: 8px 18px; font-size: 0.75rem; }
+.btn-lg { padding: 14px 40px; font-size: 1rem; }
+.btn-sm { padding: 8px 18px; font-size: 0.78rem; }
 
 /* ════════════════════════════════════════════════════════════
    ERROR / MESSAGES
@@ -449,9 +451,10 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 
 .placement-header h2 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.2rem;
-  color: #60a0ff;
+  font-size: 1.25rem;
+  color: #88c4ff;
   margin-bottom: 8px;
+  text-shadow: 0 0 10px rgba(80,160,255,0.3);
 }
 
 .placement-controls {
@@ -518,19 +521,38 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  background: linear-gradient(90deg, #0a0f28, #101640, #0a0f28);
-  border: 1px solid #1e2856;
-  border-radius: 10px;
-  padding: 12px 24px;
+  gap: 20px;
+  background: linear-gradient(90deg, #080d22, #0e1438, #080d22);
+  border: 1px solid #253070;
+  border-radius: 12px;
+  padding: 16px 32px;
   font-weight: 600;
   font-size: 1rem;
+  width: 100%;
 }
 
-.status-turn { color: #60c0ff; }
-.status-waiting { color: #7090b0; }
-.status-win { color: #ffe050; font-size: 1.2rem; }
-.status-ships { color: #8090b0; font-size: 0.9rem; }
+.status-turn {
+  color: #e0f8ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: rgba(0, 180, 220, 0.12);
+  border: 2px solid rgba(0, 210, 255, 0.55);
+  border-radius: 8px;
+  padding: 8px 24px;
+  text-shadow: 0 0 12px rgba(0, 220, 255, 0.9), 0 0 28px rgba(0, 180, 255, 0.5);
+  box-shadow: 0 0 18px rgba(0, 200, 255, 0.2), inset 0 0 14px rgba(0, 200, 255, 0.08);
+}
+
+.status-waiting {
+  color: #8090a8;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+}
+
+.status-win { color: #ffe050; font-size: 1.4rem; text-shadow: 0 0 16px rgba(255,220,50,0.5); }
+.status-ships { color: #90a0bc; font-size: 1rem; }
 
 .battle-boards {
   display: flex;
@@ -561,24 +583,27 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 
 .board-label {
   font-family: 'Orbitron', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  padding: 6px 16px;
+  padding: 7px 20px;
   border-radius: 6px;
   text-align: center;
+  font-weight: 700;
 }
 
 .board-section:first-child .board-label {
-  color: #60a0ff;
-  background: rgba(20,40,80,0.5);
-  border: 1px solid rgba(30,60,120,0.5);
+  color: #80c0ff;
+  background: rgba(20,40,80,0.6);
+  border: 1px solid rgba(40,80,160,0.6);
+  text-shadow: 0 0 8px rgba(80,160,255,0.3);
 }
 
 .board-section:last-child .board-label {
-  color: #ff6070;
-  background: rgba(80,20,20,0.4);
-  border: 1px solid rgba(120,30,30,0.4);
+  color: #ff7888;
+  background: rgba(80,20,20,0.5);
+  border: 1px solid rgba(160,40,40,0.5);
+  text-shadow: 0 0 8px rgba(255,80,90,0.3);
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -701,8 +726,8 @@ h1, h2, h3, .game-title, .game-title-small { font-family: 'Orbitron', sans-serif
 
 .ship-indicator.alive {
   background: #0e2040;
-  color: #50a0dd;
-  border: 1px solid #1a4070;
+  color: #70c0f0;
+  border: 1px solid #255080;
 }
 
 .ship-indicator.destroyed {
